@@ -1,0 +1,273 @@
+ /* General Styles */
+
+
+
+ body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .places-section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .places-section h2 {
+            color: #333;
+            margin: 20px 0;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .place-details {
+            display: none;
+            padding: 15px;
+        }
+
+        .place-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        
+h3 .i{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #333;
+}
+
+.navbar {
+        background-color: #333; 
+        overflow: hidden;
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .navbar a:hover{
+        background-color: #D3B683; /* Darker sage green on hover */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 90px;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #334c3b; 
+    }
+
+    .navbar a.active {
+        color: white;
+    }
+
+    .navbar .icon {
+        display: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 17px;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #d3e0dc; 
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: #333; 
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #c7dbc9; 
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar a:not(:first-child),
+        .dropdown .dropbtn {
+            display: none;
+        }
+
+        .navbar a.icon {
+            float: right;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar.responsive a,
+        .navbar.responsive .dropdown {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar.responsive a,
+        .navbar.responsive .dropdown {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar.responsive {
+            position: relative;
+        }
+
+        .navbar.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .navbar.responsive a,
+        .navbar.responsive .dropdown {
+            display: block;
+            text-align: center;
+        }
+    }
+
+
+
+/* Image Hover Effect */
+img {
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+border-radius: 10px;
+}
+
+
+ 
+img:hover {
+transform: scale(1.06);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 i{
+    animation: floatingCar 2s infinite;  
+}
+
+    @keyframes floatingCar {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .floating-car {
+        font-size: 24px;
+        animation: floatingCar 2s infinite;
+    }
+
+/* Button and Icon Animations */
+.btn-icon,
+.navbar a,
+.dropdown .dropbtn,
+.contact input[type="submit"] {
+transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-icon:hover,
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.contact input[type="submit"]:hover {
+background-color: #5b7e43; 
+transform: scale(1.05);
+}
+
+/* Footer Styles */
+.footer-item a:hover {
+color: #5b7e43; 
+}
+
+/* Copyright Text */
+.copyright {
+font-size: 12px;
+color: #666;
+}
+
+/* Additional Animations */
+@keyframes iconColorChange {
+0% {
+    color: #fff;
+}
+50% {
+    color: #5b7e43; 
+}
+100% {
+    color: #fff;
+}
+}
+
+.dropdown:hover .dropbtn i {
+animation: iconColorChange 1s infinite;
+}
+
+
+.places-section {
+        background-color: #f9f9f9;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+
+   
+
+   
+
+   
+   
+   

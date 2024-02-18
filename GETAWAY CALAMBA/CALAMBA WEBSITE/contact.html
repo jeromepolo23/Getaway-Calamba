@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Contact Us</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" >
+  
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar">
+      <div class="container flex">
+          <a href="index.html" class="site-brand"><img src="images/logo.png" width="125"></a>
+          <div class="navbar">
+              <a href="index.html" class="active">Home</a>
+              <div class="dropdown">
+                  <button class="dropbtn">Destination</button>
+                  <div class="dropdown-content">
+                      <a href="PlaceYouCanGo.html">Destination You Can Go</a>
+                      <a href="FoodAndRestaurant.html">Food and Restaurants</a>
+                      <a href="HotelAndResort.html">Hotel and Resorts</a>
+                  </div>
+              </div>
+              <a href="contact.html">Contact</a>
+          </div>
+      </div>
+  </nav>
+<!-- end of navbar  -->
+<div class="p">
+<p class = "text"><b>Discover the beauty and culture of Calamba. Explore its captivating attractions and savor the essence of local products. Your gateway to an unforgettable experience in this vibrant city.</b></p>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="contact-form">
+          <h2 class="text-center mb-4">Contact Us</h2>
+
+          <!-- Contact Information with Icons -->
+          <div class="mb-3">
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong>GetawaytoCalamba@gmail.com</p>
+            <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +1 (123) 456-7890</p>
+            <p><i class="fab fa-facebook"></i> <strong>Facebook:</strong> <a href="https://www.facebook.com/example" target="_blank">GetawaytoCalamba</a></p>
+          </div>
+          <!-- End Contact Information with Icons -->
+
+          <!-- Contact Form -->
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <!-- End Contact Form -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- footer -->
+<footer class = "py-4">
+  <div class = "container footer-row">
+      <div class = "footer-item">
+          <a href = "index.html" class = "site-brand"><img src="images/logo.png" width="120">
+      </a>
+      <a href = "index.html" class = "Calamba Logo"><img src="images/calambalogo.png" width="100">
+      </a>
+          <p class = "text"><center>Discover the beauty and culture of Calamba. Explore its captivating attractions and savor the essence of local products. Your gateway to an unforgettable experience in this vibrant city.</center></p>
+      </div>
+
+      <a href="GetawaytoCalamba@gmail.com"><center>GetawaytoCalamba@gmail.com</center></a>
+      <br>
+      <hr>
+      <p class="copyright"><center>Copyright 2023</center></p>
+    </div>
+
+</footer>
+
+  <!-- Bootstrap JS and Popper.js -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    
+    // Get form values
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    
+    // Simple form validation
+    if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+      alert('Please fill in all fields');
+      return;
+    }
+    
+    // Simulate form submission (replace this with actual AJAX request or form submission logic)
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Message:', message);
+    
+    // Clear form inputs after submission
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+    
+    // Display confirmation message
+    window.alert('Form submitted successfully! Thank you.');
+  });
+</script>
+
+</body>
+
+</html>

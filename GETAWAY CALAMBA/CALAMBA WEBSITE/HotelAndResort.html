@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getaway Calamba</title>
+    <link rel="stylesheet" type="text/css" href="hotel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+<!-- navbar  -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand"><img src="images/logo.png" width="125"></a>
+            <div class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Destination</button>
+                    <div class="dropdown-content">
+                        <a href="PlaceYouCanGo.html">Destination You Can Go</a>
+                        <a href="FoodAndRestaurant.html">Food and Restaurants</a>
+                        <a href="HotelAndResort.html">Hotel and Resorts</a>
+                    </div>
+                </div>
+                
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+<!-- end of navbar  -->
+
+
+<title>KalanBanga: Hotels/Resorts</title>
+    
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            
+            <h1><center>Stay in Comfort at Calamba's Hotels and Resorts</center></h1>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section class="hotels-section">
+            <h2>Laguna Hot Springs Resort <i class="fas fa-map-marker-alt" onclick="openGoogleMaps('Laguna Hot Springs Resort, Calamba, Laguna')"></i></h2>
+            <table>
+                <tr>
+                    <td><img src="Images/Hot Spring.jpg" alt="Laguna Hot Springs Resort" style="height: 210px; width: 370px;" onclick="toggleExpandedText('Hot Springs Resort'); animateImage('hotSpringsImg')"></td>
+                    <td>
+                        <div id="Hot Springs Resort-details" class="place-details expanded-text">
+                            <dd>
+                                <p>Unwind in luxurious hot spring pools and enjoy spa treatments. Located near Laguna de Bay, offering scenic views.</p>
+                            </dd>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="hotels-info">
+                            <i class="fas fa-star"></i> 4.7 (150 Reviews) <br>
+                            <h3>Transportation <i class="fas fa-car floating-car"></i></h3>
+                            <p>Various transportation options available from Calamba City terminal. Taxis and private car rentals are also available for convenience.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        <section class="hotels-section">
+            <h2>Calamba Resort and Spa <i class="fas fa-map-marker-alt" onclick="openGoogleMaps('Calamba Resort and Spa, Calamba, Laguna')"></i></h2>
+            <table>
+                <tr>
+                    <td><img src="Images/WonderIsland.jpg" alt="Calamba Resort and Spa" style="height: 210px; width: 370px;" onclick="toggleExpandedText('Resort and Spa'); animateImage('resortImg')"></td>
+                    <td>
+                        <div id="Resort and Spa-details" class="place-details expanded-text">
+                            <dd>
+                                <p>Stay by the lakeside and enjoy comfortable rooms, delicious cuisine, and water activities. Close to Laguna de Bay, offering lakeside relaxation.</p>
+                            </dd>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="hotels-info">
+                            <i class="fas fa-star"></i> 4.8 (180 Reviews) <br>
+                            <h3>Transportation <i class="fas fa-car floating-car"></i></h3>
+                            <p>Easy access from Calamba City terminal via tricycle or jeepney. Shuttle services are also provided by the resort.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        <section class="hotels-section">
+            <h2>Mountain View Resort <i class="fas fa-map-marker-alt" onclick="openGoogleMaps('Mountain View Resort, Calamba, Laguna')"></i></h2>
+            <table>
+                <tr>
+                    <td><img src="Images/MountainPeak.jpg" alt="Mountain View Resort" style="height: 210px; width: 370px;" onclick="toggleExpandedText('Mountain View '); animateImage('mountainViewImg')"></td>
+                    <td>
+                        <div id="Mountain View -details" class="place-details expanded-text">
+                            <dd>
+                                <p>Nestled in the foothills of Mt. Makiling, offering panoramic views. Ideal for nature lovers and adventure enthusiasts.</p>
+                            </dd>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="hotels-info">
+                            <i class="fas fa-star"></i> 4.6 (170 Reviews) <br>
+                            <h3>Transportation <i class="fas fa-car floating-car"></i></h3>
+                            <p>Accessible via public transportation from Calamba City terminal. Private car hire is recommended for more convenience.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        <section class="hotels-section">
+            <h2>Riverside Inn <i class="fas fa-map-marker-alt" onclick="openGoogleMaps('Riverside Inn, Calamba, Laguna')"></i></h2>
+            <table>
+                <tr>
+                    <td><img src="Images/riverview.jpg" alt="Riverside Inn" style="height: 210px; width: 370px;" onclick="toggleExpandedText('Riverside'); animateImage('riversideImg')"></td>
+                    <td>
+                        <div id="Riverside-details" class="place-details expanded-text">
+                            <dd>
+                                <p>Located near Banga, offering easy access to local attractions. Riverside views and comfortable accommodations for a relaxing stay.</p>
+                            </dd>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="hotels-info">
+                            <i class="fas fa-star"></i> 4.7 (150 Reviews) <br>
+                            <h3>Transportation <i class="fas fa-car floating-car"></i></h3>
+                            <p>Conveniently located with access to transportation from Calamba City terminal. Taxis and tricycles are readily available.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+
+
+    
+    <script>
+        function openGoogleMaps(location) {
+            window.open('https://www.google.com/maps/search/' + encodeURI(location));
+        }
+        function toggleExpandedText(destination) {
+            const details = document.getElementById(`${destination}-details`);
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+       
+    </script>
+<!-- footer -->
+<footer class = "py-4">
+    <div class = "container footer-row">
+        <div class = "footer-item">
+            <a href = "index.html" class = "site-brand"><img src="images/logo.png" width="125">
+        </a>
+        <a href = "index.html" class = "Calamba Logo"><img src="images/calambalogo.png" width="100">
+        </a>
+            <p class = "text"><center>Discover the beauty and culture of Calamba. Explore its captivating attractions and savor the essence of local products. Your gateway to an unforgettable experience in this vibrant city.</center></p>
+        </div>
+
+        <a href="GetawaytoCalamba@gmail.com"><center>GetawaytoCalamba@gmail.com</center></a>
+        <br>
+        <hr>
+        <p class="copyright"><center>Copyright 2022</center></p>
+      </div>
+      
+</footer>
+<!-- end of footer -->
+
+</body>
+</html>

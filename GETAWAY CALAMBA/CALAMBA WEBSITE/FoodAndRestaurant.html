@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getaway Calamba</title>
+    <link rel="stylesheet" type="text/css" href="food.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+<!-- navbar  -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand"><img src="images/logo.png" width="125"></a>
+            <div class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Destination</button>
+                    <div class="dropdown-content">
+                        <a href="PlaceYouCanGo.html">Destination You Can Go</a>
+                        <a href="FoodAndRestaurant.html">Food and Restaurants</a>
+                        <a href="HotelAndResort.html">Hotel and Resorts</a>
+                    </div>
+                </div>
+               
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+<!-- end of navbar  -->
+
+<body>
+    <div class="small-container">
+        <div class="row row-2">
+            <h1><center>Indulge in Calamba's Culinary Delights</center></h1>
+        </div>
+    <div class="container">
+        <section class="food-section">
+            <h2>Laong Laan Restaurant <i class="fas fa-map-marker-alt" onclick="openGoogleMaps('Laong Laan Restaurant, Calamba, Laguna')"></i></h2>
+            <table>
+                <tr>
+                    <td><img src="Images/Laong Laan Restaurant.jpg" alt="Laong Laan Restaurant" style="height: 210px; width: 370px;" onclick="toggleExpandedText('Laong')"></td>
+                    <td>
+                        <div id="Laong-details" class="place-details expanded-text">
+                            <dd>
+                                <p>Laong Laan Restaurant offers a delightful range of Filipino cuisine with a modern twist. Enjoy a cozy ambiance and friendly service, making it a perfect spot for family gatherings.</p>
+                            </dd>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="food-info">
+                            <i class="fas fa-star"></i> 4.3 (137 Reviews) <br>
+                            <i class="fas fa-money-bill-wave"></i> PHP 200 - PHP 400 <br>
+                            <h3>Transportation <i class="fas fa-car floating-car"></i></h3>
+                            <p>Accessible via public transportation from Calamba City terminal. Private car hire is recommended for more convenience.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        <section class="food-section">
+            <h2>RSM Lutong Bahay <i class="fas fa-map-marker-alt" onclick="openGoogleMaps('RSM Lutong Bahay, Calamba, Laguna')"></i></h2>
+            <table>
+                <tr>
+                    <td><img src="Images/RSM Lutong Bahay.jpg" alt="RSM Lutong Bahay" style="height: 210px; width: 370px;" onclick="toggleExpandedText('RSM')"></td>
+                    <td>
+                        <div id="RSM-details" class="place-details expanded-text">
+                            <dd>
+                                <p>RSM Lutong Bahay serves authentic Filipino home-cooked meals in a warm and inviting atmosphere. Their menu showcases traditional flavors that will remind you of home.</p>
+                            </dd>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="food-info">
+                            <i class="fas fa-star"></i> 3.9 (174 Reviews) <br>
+                            <i class="fas fa-money-bill-wave"></i> PHP 150 - PHP 300 <br>
+                            <h3>Transportation <i class="fas fa-car floating-car"></i></h3>
+                            <p>Accessible via public transportation from Calamba City terminal. Private car hire is recommended for more convenience.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        <section class="food-section">
+            <h2>Dinghao Chinese Cuisine<i class="fas fa-map-marker-alt" onclick="openGoogleMaps('Dinghao Chinese Cuisine, Calamba, Laguna')"></i></h2>
+            <table>
+                <tr>
+                    <td><img src="Images/Dinghao Chinese Cuisine.jpg" alt="Dinghao Chinese Cuisine" style="height: 210px; width: 370px;" onclick="toggleExpandedText('Dinghao')"></td>
+                    <td>
+                        <div id="Dinghao-details" class="place-details expanded-text">
+                            <dd>
+                                <p>Dinghao Chinese Cuisine offers a delectable array of authentic Chinese dishes. Experience the rich flavors and aromatic spices that define Chinese culinary traditions.</p>
+                            </dd>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="food-info">
+                            <i class="fas fa-star"></i> 4.2 (543 Reviews) <br>
+                            <i class="fas fa-money-bill-wave"></i> PHP 250 - PHP 500 <br>
+                            <h3>Transportation <i class="fas fa-car floating-car"></i></h3>
+                            <p>Accessible via public transportation from Calamba City terminal. Private car hire is recommended for more convenience.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        <section class="food-section">
+            <h2>BTC Samgyupwings <i class="fas fa-map-marker-alt" onclick="openGoogleMaps('BTC Samgyupwings, Calamba, Laguna')"></i></h2>
+            <table>
+                <tr>
+                    <td><img src="Images/BTC Samgyupwings.jpg" alt="BTC Samgyupwings" style="height: 210px; width: 370px;" onclick="toggleExpandedText('BTC')"></td>
+                    <td>
+                        <div id="BTC-details" class="place-details expanded-text">
+                            <dd>
+                                <p>BTC Samgyupwings is a paradise for Korean BBQ and chicken wing enthusiasts. Indulge in flavorful meats and crispy wings served with a variety of delectable sauces.</p>
+                            </dd>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="food-info">
+                            <i class="fas fa-star"></i> 4.3 (78 Reviews) <br>
+                            <i class="fas fa-money-bill-wave"></i> PHP 300 - PHP 600 <br>
+                            <h3>Transportation <i class="fas fa-car floating-car"></i></h3>
+                            <p>Accessible via public transportation from Calamba City terminal. Private car hire is recommended for more convenience.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+
+                    
+                    <script>
+                        function openGoogleMaps(location) {
+                            window.open('https://www.google.com/maps/search/' + encodeURI(location));
+                        }
+                        function toggleExpandedText(destination) {
+                            const details = document.getElementById(`${destination}-details`);
+                            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+                        }
+                    </script>
+                
+                 <!-- footer -->
+                 <footer class = "py-4">
+                    <div class = "container footer-row">
+                        <div class = "footer-item">
+                            <a href = "index.html" class = "site-brand"><img src="images/logo.png" width="120">
+                        </a>
+                        <a href = "index.html" class = "Calamba Logo"><img src="images/calambalogo.png" width="100">
+                        </a>
+                            <p class = "text"><center>Discover the beauty and culture of Calamba. Explore its captivating attractions and savor the essence of local products. Your gateway to an unforgettable experience in this vibrant city.</center></p>
+                        </div>
+                
+                        <a href="GetawaytoCalamba@gmail.com"><center>GetawaytoCalamba@gmail.com</center></a>
+                        <br>
+                        <hr>
+                        <p class="copyright"><center>Copyright 2023</center></p>
+                      </div>
+                
+                </footer>
+                 <!-- end of footer -->
+                
+                </body>
+                </html>
